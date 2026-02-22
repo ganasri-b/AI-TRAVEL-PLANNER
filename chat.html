@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Travel Planner</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="hero">
+<h1>🌍 AI Travel Planner</h1>
+<p>Just choose your state. We plan everything.</p>
+
+<form method="post" class="form-box">
+
+<select name="state" required>
+<option value="">Select State</option>
+<option>Kerala</option>
+<option>Tamil Nadu</option>
+<option>Karnataka</option>
+<option>Delhi</option>
+<option>Rajasthan</option>
+<option>Maharashtra</option>
+</select>
+
+<select name="days">
+<option value="1">1 Day</option>
+<option value="2">2 Days</option>
+<option value="3">3 Days</option>
+<option value="5">5 Days</option>
+</select>
+
+<select name="budget">
+<option value="3000">₹3000</option>
+<option value="5000">₹5000</option>
+<option value="8000">₹8000</option>
+<option value="10000">₹10000</option>
+</select>
+
+<button>Generate Plan</button>
+</form>
+
+</div>
+
+<div class="result">
+<pre>{{plan}}</pre>
+</div>
+
+</body>
+</html>
